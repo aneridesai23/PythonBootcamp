@@ -1,0 +1,6 @@
+<form action="/nasa/date/" method="POST">
+	{% csrf_token %}
+	<label for="date">Enter a date:</label>
+	<input type="date" id="nasa_date" name="date">
+	<input type="submit" value="Find NASA picture">
+</form>
