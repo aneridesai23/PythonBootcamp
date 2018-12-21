@@ -1,0 +1,5 @@
+{% for nasa_comments in object_list %}
+	<li>{{ nasa_comments.comment }} with a rating of {{ nasa_comments.rating }} </li>
+{% empty %}
+	<li>No comments have been made yet!</li>
+{% endfor %}
